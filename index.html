@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NASA Space Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg
+" alt="NASA Logo" class="logo">
+    <h1>NASA Space Explorer</h1>
+    <p>Explore NASA's Astronomy Picture of the Day</p>
+  </header>
+
+  <main>
+    <section class="date-picker">
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" />
+
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" />
+
+      <button id="fetch-button">Explore</button>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <!-- Images will be dynamically inserted here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Images and data courtesy of <a href="https://api.nasa.gov/" target="_blank">NASA API</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
